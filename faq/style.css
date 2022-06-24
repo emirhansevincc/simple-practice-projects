@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(35, 34, 34);
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+h1{
+    text-align: center; 
+    color: whitesmoke;
+    margin-top: 30px;
+}
+.faq{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 30px 0 20px 0;
+    position: relative;
+    transition: .4s ease;
+    background-color: transparent;
+    overflow: hidden;
+}
+.faq.active{
+    background-color: rgb(28, 26, 26);
+    box-shadow: 0 3px 6px rgb(39, 38, 38);
+}
+.faq.active::before,
+.faq.active::after{
+    content: "\f075";
+    font-family: "Font Awesome 5 Free";
+    font-size: 80px;
+    color: rgb(163, 236, 53);
+    opacity: .5;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+}
+.faq.active::before{
+    top: -10px;
+    left: -20px;
+}
+.text{
+    font-size: 18px;
+    margin: 12px 0 8px 0;
+    display: none;
+}
+.faq.active .text{
+    display: block;
+}
+h3{
+    margin: 20px 0 10px 0;
+}
+.toggle{
+    background-color: transparent;
+    /* padding: 5px; */
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    color: whitesmoke;
+}
+.toggle .fa-times{display: none;}
+.faq.active .fa-times{display: block;}
+.faq.active .fa-chevron-down{display: none;}

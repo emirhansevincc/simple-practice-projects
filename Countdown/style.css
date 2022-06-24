@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #111;
+}
+.center{
+    background-color: #222;
+    padding: 20px;
+    color: whitesmoke;
+    border-radius: 15px;
+    max-width: 480px;
+}
+.countdown{
+    display: flex;
+    flex-direction: space-around;
+}
+.part{
+    margin-top: 20px;
+    padding: 20px;
+}
+h2{margin-top: 1rem;}
